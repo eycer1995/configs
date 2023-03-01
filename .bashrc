@@ -30,5 +30,7 @@ export PS1="[\A] \[$(tput sgr0)\]\[\033[38;5;27m\]\\$\[$(tput sgr0)\]: \[$(tput 
 #ssh-add ~/.ssh/github
 export PATH=/home/eycer/Documents/github/scripts/:$PATH
 
-alias dolar='python3 /home/eycer/Documents/gitea/python_scripts/usd.py'
+# --- aliases ---
 
+alias dolar='python3 /home/eycer/Documents/gitea/python_scripts/usd.py'
+alias la='ls -la'
