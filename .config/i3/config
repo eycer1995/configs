@@ -50,6 +50,8 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty -o font.size=22
+# bindsym $mod+Return exec terminator
+
 
 # kill focused window
 bindsym $mod+q kill
@@ -204,6 +206,7 @@ bindsym $mod+z mode "resize"
 exec_always feh --bg-scale $HOME/Pictures/blue.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+r exec alacritty -o font.size=22 -e ranger
+# bindsym $mod+r exec terminator -e ranger
 
 
 # --- colors ---
