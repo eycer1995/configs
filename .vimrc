@@ -30,9 +30,14 @@ set encoding=utf-8
 "Plugin 'nvie/vim-flake8'
 "Plugin 'jiangmiao/auto-pairs'
 "Plugin 'morhetz/gruvbox'
-"Pluging 'catppuccin/vim'
+"Plugin 'catppuccin/vim'
+"Plugin 'preservim/nerdtree'
+"Plugin 'vim-airline/vim-airline'
+
 
 "call vundle#end()
+" Load plugins using :PluginInstall
+" To install from command line: vim +PluginInstall +qall
 
 " --- Using vim-plug ---
 
@@ -53,9 +58,11 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'jiangmiao/auto-pairs'
 Plug 'catppuccin/vim', {'as': 'catppuccin'}
-
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
+" Load plugins with :PlugInstall
 
 filetype plugin indent on
 colorscheme catppuccin_mocha
@@ -69,3 +76,10 @@ set termguicolors
 
 command Pyrun execute '! clear;python3 %'
 map <F5> :Pyrun<CR>
+
+" --- NERDTree configs ---
+" Docs in :help NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
