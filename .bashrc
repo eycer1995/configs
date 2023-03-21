@@ -26,6 +26,7 @@ fi
 
 unset rc
 export PS1="[\A] \[$(tput sgr0)\]\[\033[38;5;27m\]\\$\[$(tput sgr0)\]: \[$(tput sgr0)\]"
+
 #eval "$(ssh-agent -s)"
 #ssh-add ~/.ssh/github
 export PATH=/home/eycer/Documents/github/scripts/:$PATH
@@ -34,3 +35,6 @@ export PATH=/home/eycer/Documents/github/scripts/:$PATH
 
 alias dolar='python3 /home/eycer/Documents/gitea/python_scripts/usd.py'
 alias la='ls -la'
+alias tb='nc termbin.com 9999'
+alias onedisplay='xrandr --output HDMI-0 --mode 1920x1080 --rate 60.00'
+alias twodisplay='xrandr --output HDMI-0 --primary --mode 1920x1080 --rate 60.00 --output DVI-D-0 --mode 1366x768 --rate 59.79 --left-of HDMI-0'
