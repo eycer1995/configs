@@ -116,7 +116,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+# bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -212,9 +212,7 @@ bindsym $mod+z mode "resize"
 exec_always feh --bg-scale $HOME/Pictures/blue.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom -b
-bindsym $mod+r exec alacritty -o font.size=20 -e ranger
-# bindsym $mod+r exec terminator -e ranger
-
+# exec --no-startup-id $HOME/Documents/github/scripts/setup_monitors.sh
 
 # --- colors ---
 set $rosewater #f5e0dc
@@ -253,6 +251,10 @@ client.background        $base
 
 # --- custom binds ---
 bindsym $mod+b exec firefox
+bindsym $mod+w exec --no-startup-id rofi -show window
+bindsym $mod+o exec flatpak run md.obsidian.Obsidian
+bindsym $mod+r exec alacritty -o font.size=20 -e ranger
+# bindsym $mod+r exec terminator -e ranger
 
 # --- move workspace to monitor ---
 # toggle between monitors using "<" and ">"
