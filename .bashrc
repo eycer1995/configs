@@ -36,5 +36,6 @@ export PATH=/home/eycer/Documents/github/scripts/:$PATH
 alias dolar='python3 /home/eycer/Documents/gitea/python_scripts/usd.py'
 alias la='ls -la'
 alias tb='nc termbin.com 9999'
-alias onedisplay='xrandr --output HDMI-0 --mode 1920x1080 --rate 60.00'
+alias onedisplay='xrandr --output HDMI-0 --mode 1920x1080 --rate 60.00 --output DVI-D-0 --off'
 alias twodisplay='xrandr --output HDMI-0 --primary --mode 1920x1080 --rate 60.00 --output DVI-D-0 --mode 1366x768 --rate 59.79 --left-of HDMI-0'
+alias netscan='sudo nmap -sn 192.168.0.0/24'
