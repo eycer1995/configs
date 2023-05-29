@@ -1,0 +1,12 @@
+gtk-can-change-accels = 1
+
+gtk-icon-theme-name = "papirus-icon-theme"
+gtk-theme-name = "Catppuccin-Mocha-Standard-Mauve-Dark"
+
+style "user-font"
+{
+        font_name="DejaVu Sans Mono 12"
+		
+}
+widget_class "*" style "user-font"
+gtk-font-name = "DejaVu Sans Mono 12"
