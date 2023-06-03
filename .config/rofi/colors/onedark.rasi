@@ -1,0 +1,13 @@
+/**
+ * These are really catppuccin theme colors
+ * modified from adi1090x rofi type1 style 5
+ **/
+
+* {
+    background:     #1E1E2EFF;
+    background-alt: #282B31FF;
+    foreground:     #FFFFFFFF;
+    selected:       #CBA6F7FF;
+    active:         #A6E3A1FF;
+    urgent:         #F38BA8FF;
+}

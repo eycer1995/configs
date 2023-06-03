@@ -55,7 +55,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty -o font.size=22
+bindsym $mod+Return exec alacritty -o font.size=18
 # bindsym $mod+Return exec terminator
 
 
@@ -211,7 +211,7 @@ bindsym $mod+z mode "resize"
 #}
 
 # --- Auto start ---
-exec_always feh --bg-scale $HOME/Pictures/blue.jpg
+exec_always feh --bg-scale $HOME/Pictures/purple.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom -b
 exec --no-startup-id redshift -l -34.6075682:-58.4370894
@@ -260,6 +260,7 @@ bindsym $mod+w exec --no-startup-id rofi -show window
 bindsym $mod+o exec flatpak run md.obsidian.Obsidian
 bindsym $mod+r exec alacritty -o font.size=20 -e ranger
 bindsym $mod+Shift+s exec flameshot gui
+bindsym $mod+x exec --no-startup-id ~/.config/rofi/powermenu.sh
 # bindsym $mod+r exec terminator -e ranger
 
 # --- move workspace to monitor ---
